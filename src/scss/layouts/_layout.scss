@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+@forward './intro';
+@forward './section2';
+@forward './section3';
+@forward './section4';
+
+.col {
+  margin-bottom: 2em;
+}
+
+@include mq(48rem) {
+  .row {
+    display: flex;
+  }
+  .col {
+    width: 100%;
+  }
+  .col + .col {
+    margin-left: 5em;
+  }
+  h1 {
+    font-size: $fs-black-1;
+  }
+}

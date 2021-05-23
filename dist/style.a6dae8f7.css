@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+section {
+  padding: 3.125rem 0;
+}
+
+body {
+  color: #222c2a;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3125rem;
+}
+
+.section-title {
+  color: #f3eed9;
+}
+
+.section-title--dark {
+  color: #824936;
+}
+
+.intro {
+  background-color: #f3eed9;
+  min-height: 41.25rem;
+  text-align: center;
+  padding: 12.5rem 0;
+  display: flex;
+  align-items: center;
+}
+.intro__title {
+  color: #824936;
+  line-height: 1.1;
+}
+.intro__text {
+  text-transform: uppercase;
+  margin: 0 0 0 0.25rem;
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.section-two .section-title {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.section-three {
+  background-color: #222c2a;
+  color: #fff;
+}
+
+.section-four {
+  background-color: #824936;
+  color: #fff;
+}
+
+.col {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 48rem) {
+  .row {
+    display: flex;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col + .col {
+    margin-left: 5em;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+  }
+}
+.container {
+  width: 85%;
+  max-width: 70.5rem;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */

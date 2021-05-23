@@ -1,0 +1,31 @@
+@use '../abstracts/_variables' as font;
+
+body {
+  color: font.$color-dark;
+}
+
+h1,
+h2 {
+  font-family: font.$ff-headlines;
+}
+
+h1 {
+  font-size: font.$fs-black-2;
+}
+
+h2 {
+  font-size: font.$fs-large;
+}
+
+p {
+  font-family: font.$ff-body;
+  font-size: font.$fs-medium;
+}
+
+.section-title {
+  color: font.$color-primary;
+}
+
+.section-title--dark {
+  color: font.$color-secondary;
+}
